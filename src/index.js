@@ -38,6 +38,10 @@ function displace (array, by) {
 
 module.exports = function derange (array) {
   const length = array.length
+
+  if (!length || length === 1) {
+    return []
+  }
   const indices = shuffle(fill(length))
   const displaced = displace(indices, 1)
   const a = []
