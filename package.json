@@ -2,7 +2,7 @@
   "name": "derange",
   "version": "1.0.0",
   "description": "Generate a random derangement of a set",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^7.6.0",
