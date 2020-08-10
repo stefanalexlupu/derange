@@ -1,6 +1,6 @@
 {
   "name": "derange",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a random derangement of a set",
   "main": "src/index.js",
   "dependencies": {},
