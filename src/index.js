@@ -29,7 +29,7 @@ function fill (length) {
 function displace (array, by) {
   const length = array.length
   const a = []
-  array.forEach(i => {
+  array.forEach((i) => {
     a[i] = array[(i + by) % length]
   })
 
@@ -44,10 +44,10 @@ module.exports = function derange (array) {
   }
   const indices = shuffle(fill(length))
   const displaced = displace(indices, 1)
-  const a = []
+  const derangedArray = []
   for (let i = 0; i < length; i++) {
-    a[indices[i]] = array[displaced[i]]
+    derangedArray[indices[i]] = array[displaced[i]]
   }
 
-  return a
+  return derangedArray
 }
