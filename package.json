@@ -16,5 +16,10 @@
   },
   "keywords": ["permutations", "sets", "derangement", "math"],
   "author": "Lupu Stefan Alex",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://github.com/stefanalexlupu/derange#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanalexlupu/derange"
+  }
 }
