@@ -30,6 +30,12 @@ test('test deregement of an array with 2 elements', () => {
   expect(derangement[1]).toBe(arrayWithTwoElements[0])
 })
 
+test('should throw error if argument is not array', () => {
+  ['', 0, { 0: 'a' }, false].forEach((kind) => {
+    expect(() => derange(kind)).toThrowError()
+  })
+})
+
 test.skip('When the given array is empty should throw an error', () => {
   const array = []
   const errorMessage = 'At least 2 elements are required'
