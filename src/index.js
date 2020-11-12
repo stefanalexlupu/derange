@@ -37,6 +37,9 @@ function displace (array, by) {
 }
 
 module.exports = function derange (array) {
+  if (!Array.isArray(array)) {
+    throw new Error('Argument of "derange" function must be of type Array!')
+  }
   const length = array.length
 
   if (!length || length === 1) {
