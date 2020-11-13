@@ -19,4 +19,4 @@ const derangedSet = derange([ /* your set here */ ])
 ### Note
 
 Since there is no possible derangement for empty sets and sets with a single
-element, the ouptut of the function for this cases will be the empty set.
+element, the function will throw an error if such an input is provided.
