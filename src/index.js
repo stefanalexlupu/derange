@@ -36,10 +36,18 @@ function displace (array, by) {
   return a
 }
 
-module.exports = function derange (array) {
+function checkArg (array) {
   if (!Array.isArray(array)) {
     throw new Error('Argument of "derange" function must be of type Array!')
   }
+
+  if (array.length < 2) {
+    throw new Error('Sets with les than two items have cannot be deranged!')
+  }
+}
+
+module.exports = function derange (array) {
+  checkArg(array)
   const length = array.length
 
   if (!length || length === 1) {

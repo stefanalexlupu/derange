@@ -36,16 +36,8 @@ test('should throw error if argument is not array', () => {
   })
 })
 
-test.skip('When the given array is empty should throw an error', () => {
-  const array = []
-  const errorMessage = 'At least 2 elements are required'
-
-  expect(() => derange(array)).toThrowError(errorMessage)
-})
-
-test.skip('When the given array contains only one element should throw an error', () => {
-  const array = ['a']
-  const expectedErrorMessage = 'At least 2 elements are required'
-
-  expect(() => derange(array)).toThrowError(expectedErrorMessage)
+test('should throw an error when the given array contains less than two elements', () => {
+  [[], ['a']].forEach((array) => {
+    expect(() => derange(array)).toThrowError()
+  })
 })
