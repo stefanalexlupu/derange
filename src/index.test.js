@@ -1,4 +1,4 @@
-const derange = require('./index')
+import derange from './index'
 
 let testArray
 let derangement

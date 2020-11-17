@@ -46,7 +46,7 @@ function checkArg (array) {
   }
 }
 
-module.exports = function derange (array) {
+export default function derange (array) {
   checkArg(array)
   const length = array.length
 

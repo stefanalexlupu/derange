@@ -4,6 +4,10 @@ module.exports = {
     es2020: true,
     jest: true
   },
+  ignorePatterns: [
+    'lib/*',
+    'examples/*'
+  ],
   extends: [
     'standard'
   ],
