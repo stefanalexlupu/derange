@@ -3,7 +3,7 @@ module.exports = {
     ['@babel/plugin-transform-modules-umd', {
       exactGlobals: true,
       globals: {
-        index: 'AnimalApi'
+        index: 'derange'
       }
     }]
   ],
