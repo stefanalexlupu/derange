@@ -2,7 +2,7 @@
   "name": "derange",
   "version": "1.0.1",
   "description": "Generate a random derangement of a set",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.12.1",

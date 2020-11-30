@@ -1,0 +1,20 @@
+{
+  "name": "derange-webpack-example",
+  "version": "1.0.0",
+  "description": "An example of how derange can be used in a project using webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "Stefan Alex Lupu <alex.loopu@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
+}
