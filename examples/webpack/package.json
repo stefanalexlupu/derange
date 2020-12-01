@@ -9,6 +9,9 @@
   "author": "Stefan Alex Lupu <alex.loopu@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
     "vue-loader": "^15.9.5",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^5.6.0",

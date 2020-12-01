@@ -1,15 +1,17 @@
 <template>
   <div class="app">
-    <div class="container">
-      <ul class="set">
-        <li v-for="item in initialSet" :key="item" class="set__item">{{ item }}</li>
-      </ul>
-    </div>
-    <div class="container">
-      <ul class="set">
-        <li v-for="item in derangedSet" :key="item" class="set__item">{{ item }}</li>
-      </ul>
-    </div>
+    <ul class="set">
+      <li v-for="item in initialSet" :key="item" class="set__item">{{ item }}</li>
+    </ul>
+    <button
+      class="derange-btn"
+      @click="() => { derangedSet = derange(initialSet) }"
+    >
+      DERANGE!
+    </button>
+    <ul class="set">
+      <li v-for="item in derangedSet" :key="item" class="set__item">{{ item }}</li>
+    </ul>
   </div>
 </template>
 
@@ -21,6 +23,7 @@ export default {
     return {
       initialSet: set,
       derangedSet: derange(set),
+      derange,
     }
   },
 }
