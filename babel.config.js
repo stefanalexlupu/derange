@@ -5,7 +5,8 @@ module.exports = {
       globals: {
         index: 'derange'
       }
-    }]
+    }],
+    'add-module-exports'
   ],
   presets: [
     [
