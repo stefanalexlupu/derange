@@ -1,4 +1,4 @@
-const derange = require('../../lib/index').default
+const derange = require('../../')
 
 const array = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 const deranged = derange(array)
